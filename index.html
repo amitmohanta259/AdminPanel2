@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Admin Panel</title>
+</head>
+<style>
+    @font-face {
+      font-family: Sans;
+      src: url("fonts/JUST\ Sans\ Regular.otf");
+    }
+    @font-face {
+      font-family: AderoTrial;
+      src: url("fonts/AderoTrial-Regular.otf");
+    }
+    @font-face {
+      font-family: Qrada;
+      src: url("fonts/Qrada.otf");
+    }
+    @font-face {
+      font-family: Manilla;
+      src: url("fonts/Manilla\ for\ Personal\ Use\ only.otf");
+    }
+    @font-face {
+      font-family: EBGaramond;
+      src: url("fonts/EB_Garamond/static/EBGaramond-Regular.ttf");
+    }
+    @font-face {
+      font-family: Oswald;
+      src: url("fonts/Oswald/static/Oswald-Regular.ttf");
+    }
+    @font-face {
+      font-family: Roboto;
+      src: url("fonts/Roboto/Roboto-Regular.ttf");
+    }
+    @font-face {
+      font-family: Oswald;
+      src: url("fonts/Poppins/Poppins-Regular.ttf");
+    }
+    @font-face {
+      font-family: Quattrocento;
+      src: url("fonts/Quattrocento-Regular.ttf");
+    }
+
+    body {
+      background-color: white;
+    }
+    .vertical {
+      border-left: 5px solid black;
+      height: 200px;
+    }
+    .list {
+      margin-bottom: 1rem;
+      font-family: Sans;
+    }
+    .heading {
+      font-family: Roboto;
+    }
+  </style>
+<body>
+    <div class="row">
+        
+        <div class="col-2" style="position: fixed; left: 0rem">
+            <div class="row">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <a class="navbar-brand" href="#"><img src="util/photo/icons8-counter-strike-source-48.png" alt="" width="30" height="24" class="d-inline-block align-text-top">&nbsp;Counter Strike</a>
+                        </div>                
+                    </div>
+                </nav>
+            </div>
+            <div class="row" style="margin-top: 1%;">
+                <div class="input-group flex-nowrap">
+                    <span class="input-group-text" id="addon-wrapping" style="background-color: white; border-top-left-radius: 0.5rem; border-bottom-left-radius: 0.5rem;"><img src="util/photo/icons8-search-50.png" alt="" srcset="" width="30" height="24" ></span>
+                    <input type="text" class="form-control" placeholder="Search..." aria-label="Search" aria-describedby="addon-wrapping" style="background-color: white;color: black; border-left-style: hidden;margin-left: -1rem; border-top-right-radius: 0.5rem; border-bottom-right-radius: 0.5rem;">
+                  </div>
+            </div>
+
+            <div class="row" style="margin-top: 1%;">
+                <h7>Menu</h7>
+                <div class="col-12">
+                    <div class="list-group" >
+
+                      <div class="row">
+                        <div class="col-1">
+                          <hr style="color: white; opacity: 1 ;width:0.3rem;border-width: 10rem 0 0 10rem;border-radius: 1rem 0 0 0;height: 100%;margin-top: 0; border-top-right-radius: 10rem; border-bottom-right-radius: 10rem;" />
+                        </div>
+                        <div class="col-10" style="border-color: white; background-color: white;border-radius: 0.5rem;margin-left: -0.1rem;">
+                          <a href="#" class="list-group-item list-group-item-action active" aria-current="true" style="color: black; background-color:white; border-style: hidden; margin-left: -1rem;">
+                            <img src="util/photo/icons8-male-user.gif" alt="" srcset="" style="margin-right: 2px;" width="18" height="16"> Account
+                          </a>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-1">
+                          <hr style="color: red; opacity: 1 ;width:0.3rem;border-width: 10rem 0 0 10rem;border-radius: 1rem 0 0 0;height: 100%;margin-top: 0; border-top-right-radius: 10rem; border-bottom-right-radius: 10rem;" />
+                        </div>
+                        <div class="col-10" style="border-color: white; background-color: #f6f6f6;border-radius: 0.5rem;margin-left: -0.1rem;">
+                          <a href="#" class="list-group-item list-group-item-action active" aria-current="true" style="color: black; background-color:#f6f6f6; border-style: hidden; margin-left: -1rem;">
+                            <img src="util/photo/icons8-home.gif" alt="" srcset="" style="margin-right: 2px;" width="18" height="16">Home 
+                          </a>
+                        </div>
+                        <div class="col-1" style="margin-left: -2.5rem; margin-top: 2.5%;"><span class="badge bg-danger">4</span></div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-1">
+                          <hr style="color: white; opacity: 1 ;width:0.3rem;border-width: 10rem 0 0 10rem;border-radius: 1rem 0 0 0;height: 100%;margin-top: 0; border-top-right-radius: 10rem; border-bottom-right-radius: 10rem;" />
+                        </div>
+                        <div class="col-10" style="border-color: white; background-color: white;border-radius: 0.5rem;margin-left: -0.1rem;">
+                          <a href="#" class="list-group-item list-group-item-action active" aria-current="true" style="color: black; background-color:white; border-style: hidden; margin-left: -1rem;">
+                            <img src="util/photo/icons8-checked-checkbox.gif" alt="" srcset="" style="margin-right: 2px;" width="18" height="16"> Task
+                          </a>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-1">
+                          <hr style="color: white; opacity: 1 ;width:0.3rem;border-width: 10rem 0 0 10rem;border-radius: 1rem 0 0 0;height: 100%;margin-top: 0; border-top-right-radius: 10rem; border-bottom-right-radius: 10rem;" />
+                        </div>
+                        <div class="col-10" style="border-color: white; background-color: white;border-radius: 0.5rem;margin-left: -0.1rem;">
+                          <a href="#" class="list-group-item list-group-item-action active" aria-current="true" style="color: black; background-color:white; border-style: hidden; margin-left: -1rem;">
+                            <img src="util/photo/icons8-activity.gif" alt="" srcset="" style="margin-right: 2px;" width="18" height="16"> Activity 
+                          </a>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-1">
+                          <hr style="color: white; opacity: 1 ;width:0.3rem;border-width: 10rem 0 0 10rem;border-radius: 1rem 0 0 0;height: 100%;margin-top: 0; border-top-right-radius: 10rem; border-bottom-right-radius: 10rem;" />
+                        </div>
+                        <div class="col-10" style="border-color: white; background-color: white;border-radius: 0.5rem;margin-left: -0.1rem;">
+                          <a href="#" class="list-group-item list-group-item-action active" aria-current="true" style="color: black; background-color:white; border-style: hidden; margin-left: -1rem;">
+                            <img src="util/photo/icons8-user.gif" alt="" srcset="" style="margin-right: 2px;" width="18" height="16"> Users
+                          </a>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-1">
+                          <hr style="color: white; opacity: 1 ;width:0.3rem;border-width: 10rem 0 0 10rem;border-radius: 1rem 0 0 0;height: 100%;margin-top: 0; border-top-right-radius: 10rem; border-bottom-right-radius: 10rem;" />
+                        </div>
+                        <div class="col-10" style="border-color: white; background-color: white;border-radius: 0.5rem;margin-left: -0.1rem;">
+                          <a href="#" class="list-group-item list-group-item-action active" aria-current="true" style="color: black; background-color:white; border-style: hidden; margin-left: -1rem;">
+                            <img src="util/photo/icons8-notification.gif" alt="" srcset="" style="margin-right: 2px;" width="18" height="16"> Notifications
+                          </a>
+                        </div>
+                        <div class="col-1" style="margin-left: -2.5rem; margin-top: 2.5%;"><span class="badge bg-danger">9</span></div>
+                      </div>
+                        
+                    </div>
+                </div>
+                
+            </div>
+
+            <hr style="color: black" />
+
+            <div class="row" style="margin-top: 1%;">
+              <div class="col-12">
+                  <div class="list-group" >
+
+                    <div class="row">
+                      <div class="col-1">
+                        <hr style="color: white; opacity: 1 ;width:0.3rem;border-width: 10rem 0 0 10rem;border-radius: 1rem 0 0 0;height: 100%;margin-top: 0; border-top-right-radius: 10rem; border-bottom-right-radius: 10rem;" />
+                      </div>
+                      <div class="col-10" style="border-color: white; background-color: white;border-radius: 0.5rem;margin-left: -0.1rem;">
+                        <a href="#" class="list-group-item list-group-item-action active" aria-current="true" style="color: black; background-color:white; border-style: hidden; margin-left: -1rem;">
+                          <img src="util/photo/icons8-settings.gif" alt="" srcset="" style="margin-right: 2px;" width="18" height="16"> Account
+                        </a>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-1">
+                        <hr style="color: white; opacity: 1 ;width:0.3rem;border-width: 10rem 0 0 10rem;border-radius: 1rem 0 0 0;height: 100%;margin-top: 0; border-top-right-radius: 10rem; border-bottom-right-radius: 10rem;" />
+                      </div>
+                      <div class="col-10" style="border-color: white; background-color: white;border-radius: 0.5rem;margin-left: -0.1rem;">
+                        <a href="#" class="list-group-item list-group-item-action active" aria-current="true" style="color: black; background-color:white; border-style: hidden; margin-left: -1rem;">
+                          <img src="util/photo/icons8-support-32.png" alt="" srcset="" style="margin-right: 2px;" width="18" height="16"> Notifications
+                        </a>
+                      </div>
+                    </div>
+                      
+                  </div>
+              </div>
+            </div>
+
+            <div class="row" style="margin-top: 1%;">
+              <h7>Group</h7>
+              <div class="col-12">
+                  <div class="list-group" >
+
+                    <div class="row">
+                      <div class="col-1">
+                        <hr style="color: white; opacity: 1 ;width:0.3rem;border-width: 10rem 0 0 10rem;border-radius: 1rem 0 0 0;height: 100%;margin-top: 0; border-top-right-radius: 10rem; border-bottom-right-radius: 10rem;" />
+                      </div>
+                      <div class="col-10" style="border-color: white; background-color: white;border-radius: 0.5rem;margin-left: -0.1rem;">
+                        <a href="#" class="list-group-item list-group-item-action active" aria-current="true" style="color: black; background-color:white; border-style: hidden; margin-left: -1rem;">
+                          <img src="util/photo/icons8-linkedin-48.png" alt="" srcset="" style="margin-right: 2px;" width="18" height="16"> Linkedin
+                        </a>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-1">
+                        <hr style="color: white; opacity: 1 ;width:0.3rem;border-width: 10rem 0 0 10rem;border-radius: 1rem 0 0 0;height: 100%;margin-top: 0; border-top-right-radius: 10rem; border-bottom-right-radius: 10rem;" />
+                      </div>
+                      <div class="col-10" style="border-color: white; background-color: white;border-radius: 0.5rem;margin-left: -0.1rem;">
+                        <a href="#" class="list-group-item list-group-item-action active" aria-current="true" style="color: black; background-color:white; border-style: hidden; margin-left: -1rem;">
+                          <img src="util/photo/icons8-twitter-48.png" alt="" srcset="" style="margin-right: 2px;" width="18" height="16"> Twitter 
+                        </a>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-1">
+                        <hr style="color: white; opacity: 1 ;width:0.3rem;border-width: 10rem 0 0 10rem;border-radius: 1rem 0 0 0;height: 100%;margin-top: 0; border-top-right-radius: 10rem; border-bottom-right-radius: 10rem;" />
+                      </div>
+                      <div class="col-10" style="border-color: white; background-color: white;border-radius: 0.5rem;margin-left: -0.1rem;">
+                        <a href="#" class="list-group-item list-group-item-action active" aria-current="true" style="color: black; background-color:white; border-style: hidden; margin-left: -1rem;">
+                          <img src="util/photo/icons8-facebook-48.png" alt="" srcset="" style="margin-right: 2px;" width="18" height="16"> Facebook
+                        </a>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-1">
+                        <hr style="color: white; opacity: 1 ;width:0.3rem;border-width: 10rem 0 0 10rem;border-radius: 1rem 0 0 0;height: 100%;margin-top: 0; border-top-right-radius: 10rem; border-bottom-right-radius: 10rem;" />
+                      </div>
+                      <div class="col-10" style="border-color: white; background-color: white;border-radius: 0.5rem;margin-left: -0.1rem;">
+                        <a href="#" class="list-group-item list-group-item-action active" aria-current="true" style="color: black; background-color:white; border-style: hidden; margin-left: -1rem;">
+                          <img src="util/photo/icons8-instagram-48.png" alt="" srcset="" style="margin-right: 2px;" width="18" height="16"> Instagram 
+                        </a>
+                      </div>
+                    </div>
+                      
+                  </div>
+              </div>
+              
+            </div>
+
+            <div class="row" style="margin-top: 1rem;">
+              <div class="col-1">
+                <hr style="color: white; opacity: 1 ;" />
+              </div>
+              <div class="col-10" style="background-color: #f6f6f6; border-radius: 0.5rem;">
+                 <div class="row" style="margin: 2px;">
+                    <div class="col-6" style="background-color: white; border-radius: 0.5rem; margin-top: 2px;"><img src="util/photo/icons8-sun.gif" alt="" srcset="" width="18" height="16"> Light</div>
+                    <div class="col-6"><img src="util/photo/icons8-moon-and-stars-24.png" alt="" srcset="" width="18" height="16"> Dark</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row" style="margin-top: 1rem;">
+              <div class="col-12" style="background-color:white; border-radius: 0.5rem;">
+                 <div class="row" style="margin: 2px;">
+                    <div class="col-3" style="background-color: white;  margin-top: 2px;"><img src="https://images.unsplash.com/photo-1582233479366-6d38bc390a08?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1783&q=80" style ="border-radius: 0.5rem;" alt="" srcset="" width="100%" height="100%"></div>
+                    <div class="col-7"> 
+                      <div class="row">Amit Mohanta</div>
+                      <div class="row" style="font-weight: 100;font-size: x-small;">amitmohanta@gmail.com</div>
+                    </div>
+                    <div class="col-1"><img src="util/photo/icons8-imac-exit-24.png" alt="" srcset="" width="18" height="16"></div>
+                  </div>
+              </div>
+            </div>
+
+
+          </div>
+        <div class="col-8">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light" style="position: relative; left: 25%;">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#">Navbar</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Dropdown
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                      </li>
+                    </ul>
+                    <form class="d-flex">
+                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                  </div>
+                </div>
+            </nav>
+        </div>
+        <div class="col-2"></div>
+    </div>
+    
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+</html>
