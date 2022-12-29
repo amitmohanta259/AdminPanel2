@@ -69,6 +69,17 @@ body {
   border-bottom-right-radius: 10rem;
 }
 
+.hrActive {
+  color: red;
+  opacity: 1;
+  width: 0.3rem;
+  border-width: 10rem 0 0 10rem;
+  border-radius: 1rem 0 0 0;
+  margin-top: 0;
+  border-top-right-radius: 10rem;
+  border-bottom-right-radius: 10rem;
+}
+
 .navBarElementInactive {
   border-color: white;
   background-color: white;
@@ -80,17 +91,6 @@ body {
   background-color: #f6f6f6;
   border-radius: 0.5rem;
   margin-left: -0.1rem;
-}
-
-.hrActive {
-  color: red;
-  opacity: 1;
-  width: 0.3rem;
-  border-width: 10rem 0 0 10rem;
-  border-radius: 1rem 0 0 0;
-  margin-top: 0;
-  border-top-right-radius: 10rem;
-  border-bottom-right-radius: 10rem;
 }
 
 .navbarActiveLinkAlignment {
