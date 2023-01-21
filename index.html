@@ -36,24 +36,102 @@
 
   <body>
     <div class="row">
-      <div class="col-2" style="position: Fixed; left: 0rem">
-        <div class="row">
-          <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="container-fluid">
-              <div class="row">
-                <a class="navbar-brand" href="#"
-                  ><img
-                    src="util/photo/icons8-counter-strike-source-48.png"
-                    alt=""
-                    width="30"
-                    height="28"
-                    class="d-inline-block align-text-top"
-                  />&nbsp;Counter Strike</a
-                >
-              </div>
+      <div class="row">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#"
+            ><img
+              src="util/photo/icons8-counter-strike-source-48.png"
+              alt=""
+              width="30"
+              height="28"
+              class="d-inline-block align-text-top"
+            />&nbsp;Counter Strike</a
+          >
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Order History</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Inventory
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Vegitables</a></li>
+                    <li><a class="dropdown-item" href="#">Cereals</a></li>
+                    <li><a class="dropdown-item" href="#">Editble Oils</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Gas</a></li>
+                    <li><a class="dropdown-item" href="#">Utensils</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#" tabindex="-1">Market Place</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#" tabindex="-1">Payment History</a>
+                </li>
+                
+              </ul>
+              <form class="d-flex">
+                
+                <div class="row" style="margin-left: 0.5%;">
+                  <div
+                    class="col-6"
+                    style="border-right: 1px solid rgb(143, 140, 140)"
+                  >
+                    <div class="row">16:44</div>
+                    <div class="row" style="font-size: x-small">Dec 29,2022</div>
+                  </div>
+                  <div class="col-6 align-middle">
+                    <div class="row">
+                      <div class="col-4">
+                        <img
+                          src="util/photo/icons8-notification.gif"
+                          alt=""
+                          srcset=""
+                          width="18"
+                          height="16"
+                        />
+                      </div>
+                      <div class="col-4">
+                        <img
+                          src="util/photo/icons8-message-read.gif"
+                          alt=""
+                          srcset=""
+                          width="18"
+                          height="16"
+                        />
+                      </div>
+                      <div class="col-4">
+                        <img
+                          src="util/photo/icons8-favorites-48.png"
+                          alt=""
+                          srcset=""
+                          width="18"
+                          height="16"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
             </div>
-          </nav>
-        </div>
+          </div>
+          
+        </nav>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-2" style="position: Fixed; left: 0rem">
+        
         <div class="row" style="margin-top: 2%">
           <div class="input-group flex-nowrap">
             <span
@@ -476,79 +554,6 @@
         class="col-7 scrollBar"
         style="position: relative; overflow: auto; height: 900px; left: 16.5%"
       >
-        <nav
-          class="navbar navbar-expand-lg navbar-light sticky-top"
-          style="background-color: white"
-        >
-          <div class="container-fluid">
-            <!-- <a class="navbar-brand" href="#">Navbar</a> -->
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#"
-                    >Home</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    id="navbarDropdown"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    Dropdown
-                  </a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li>
-                      <a class="dropdown-item" href="#">Another action</a>
-                    </li>
-                    <li><hr class="dropdown-divider" /></li>
-                    <li>
-                      <a class="dropdown-item" href="#">Something else here</a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="nav-item">
-                  <a
-                    class="nav-link disabled"
-                    href="#"
-                    tabindex="-1"
-                    aria-disabled="true"
-                    >Disabled</a
-                  >
-                </li>
-              </ul>
-              <form class="d-flex">
-                <input
-                  class="form-control me-2"
-                  type="search"
-                  placeholder="Search"
-                  aria-label="Search"
-                />
-                <button class="btn btn-outline-success" type="submit">
-                  Search
-                </button>
-              </form>
-            </div>
-          </div>
-        </nav>
         <!-- <div class="row">
           <div class="container-fluid">
             <div class="card bg-dark text-white">
@@ -756,52 +761,7 @@
       </div>
       <div class="col-3" style="position: Fixed; right: 0%">
         <div class="container-fluid" style="margin-right: 0">
-          <nav
-            class="navbar navbar-expand-lg navbar-light"
-            style="background-color: white; margin-left: 20%"
-          >
-            <div class="row" style="margin-left: 2rem">
-              <div
-                class="col-6"
-                style="border-right: 1px solid rgb(143, 140, 140)"
-              >
-                <div class="row">16:44</div>
-                <div class="row" style="font-size: x-small">Dec 29,2022</div>
-              </div>
-              <div class="col-6 align-middle">
-                <div class="row">
-                  <div class="col-4">
-                    <img
-                      src="util/photo/icons8-notification.gif"
-                      alt=""
-                      srcset=""
-                      width="18"
-                      height="16"
-                    />
-                  </div>
-                  <div class="col-4">
-                    <img
-                      src="util/photo/icons8-message-read.gif"
-                      alt=""
-                      srcset=""
-                      width="18"
-                      height="16"
-                    />
-                  </div>
-                  <div class="col-4">
-                    <img
-                      src="util/photo/icons8-favorites-48.png"
-                      alt=""
-                      srcset=""
-                      width="18"
-                      height="16"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </nav>
-          <div class="row" style="margin-top: 0.5rem">
+                   <div class="row" style="margin-top: 0.5rem">
             <div class="col-12">
               <nav>
                 <div class="nav nav-tabs" id="nav-tab" role="tablist">
@@ -815,7 +775,7 @@
                     aria-controls="nav-home"
                     aria-selected="true"
                   >
-                    Today's Task
+                     Task
                   </button>
                   <button
                     class="nav-link"
@@ -874,19 +834,19 @@
                   <div class="row">
                     <div class="col-4" style="border-right: 1px solid grey">
                       All
-                      <span class="badge bg-primary" style="margin-left: 1rem"
+                      <span class="badge bg-primary" style="margin-left: 0.5%"
                         >4</span
                       >
                     </div>
                     <div class="col-4" style="border-right: 1px solid grey">
                       Open
-                      <span class="badge bg-danger" style="margin-left: 1rem"
+                      <span class="badge bg-danger" style="margin-left: 0.5%"
                         >4</span
                       >
                     </div>
                     <div class="col-4">
                       Close
-                      <span class="badge bg-success" style="margin-left: 1rem"
+                      <span class="badge bg-success" style="margin-left: 0.5%"
                         >4</span
                       >
                     </div>
@@ -1375,19 +1335,19 @@
                   <div class="row">
                     <div class="col-4" style="border-right: 1px solid grey">
                       All
-                      <span class="badge bg-primary" style="margin-left: 1rem"
+                      <span class="badge bg-primary" style="margin-left: 0.5%"
                         >4</span
                       >
                     </div>
                     <div class="col-4" style="border-right: 1px solid grey">
                       Open
-                      <span class="badge bg-danger" style="margin-left: 1rem"
+                      <span class="badge bg-danger" style="margin-left: 0.5%"
                         >4</span
                       >
                     </div>
                     <div class="col-4">
                       Close
-                      <span class="badge bg-success" style="margin-left: 1rem"
+                      <span class="badge bg-success" style="margin-left: 0.5%"
                         >4</span
                       >
                     </div>
