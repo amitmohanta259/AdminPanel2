@@ -106,3 +106,10 @@ body {
   border-style: hidden;
   margin-left: -1rem;
 }
+
+/* @media screen and (max-width : 900) {
+  #navbar-content {
+    margin-left: 3rem;
+  }
+} */
+
